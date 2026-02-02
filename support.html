@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Kalenderwochen Widget</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #4D80F2 0%, #3359D9 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #3359D9;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+
+        h2 {
+            color: #4D80F2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        h3 {
+            color: #3359D9;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 40px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 5px;
+        }
+
+        .highlight {
+            background: #f0f7ff;
+            padding: 20px;
+            border-left: 4px solid #4D80F2;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #4D80F2, #3359D9);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(77, 128, 242, 0.3);
+        }
+
+        .contact-card h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-method {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-method h3 {
+            color: white;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            font-size: 24px;
+        }
+
+        a {
+            color: #4D80F2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-card a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 3px solid #4D80F2;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #3359D9;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            color: #666;
+        }
+
+        .app-info {
+            background: #f0f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: #4D80F2;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+        <h1>📱 Support</h1>
+        <div class="subtitle">Kalenderwochen Widget - Hilfe & Unterstützung</div>
+
+        <div class="highlight">
+            <strong>Schnelle Hilfe benötigt?</strong> Die meisten Fragen werden in unseren FAQs unten beantwortet. Für weitere Unterstützung kontaktiere uns gerne per E-Mail.
+        </div>
+
+        <div class="contact-card">
+            <h2>📧 Kontakt</h2>
+            
+            <div class="contact-method">
+                <h3><span class="icon">✉️</span> E-Mail Support</h3>
+                <p><a href="mailto:support@alohavista.de">support@alohavista.de</a></p>
+                <p style="font-size: 0.9em; opacity: 0.9;">Wir melden uns schnellstmöglich zurück.</p>
+            </div>
+
+            <div class="contact-method">
+                <h3><span class="icon">💬</span> Feedback & Verbesserungsvorschläge</h3>
+                <p><a href="mailto:feedback@alohavista.de">feedback@alohavista.de</a></p>
+                <p style="font-size: 0.9em; opacity: 0.9;">Wir freuen uns über dein Feedback!</p>
+            </div>
+        </div>
+
+        <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Wie füge ich das Widget zum Homescreen hinzu?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Drücke lange auf deinen Homescreen (bis die Icons wackeln)</li>
+                    <li>Tippe auf das <strong>"+"</strong> Symbol oben links</li>
+                    <li>Suche nach <strong>"Kalenderwochen Widget"</strong></li>
+                    <li>Wähle die gewünschte Widget-Größe (Klein, Mittel oder Groß)</li>
+                    <li>Tippe auf <strong>"Widget hinzufügen"</strong></li>
+                    <li>Fertig! ✅</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Welche Widget-Größen gibt es?</div>
+            <div class="faq-answer">
+                <ul>
+                    <li><strong>Klein:</strong> Zeigt KW-Nummer und Jahr kompakt an</li>
+                    <li><strong>Mittel:</strong> Zusätzlich mit aktuellem Datum und Wochentag</li>
+                    <li><strong>Groß:</strong> Ausführliche Anzeige mit allen Informationen in Karten-Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Wie wird die Kalenderwoche berechnet?</div>
+            <div class="faq-answer">
+                Die App verwendet den <strong>ISO 8601 Standard</strong>:
+                <ul>
+                    <li>Die Woche beginnt am Montag</li>
+                    <li>Die erste Woche eines Jahres ist die Woche, die den ersten Donnerstag enthält</li>
+                    <li>Dies ist der internationale Standard für Kalenderwochen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Aktualisiert sich das Widget automatisch?</div>
+            <div class="faq-answer">
+                Ja! Das Widget aktualisiert sich automatisch:
+                <ul>
+                    <li>Stündliche Updates während des Tages</li>
+                    <li>Automatische Aktualisierung bei Wochenwechsel</li>
+                    <li>Keine manuelle Aktualisierung notwendig</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Warum zeigt das Widget nicht die aktuelle Woche?</div>
+            <div class="faq-answer">
+                Falls das Widget nicht aktualisiert wird:
+                <ol>
+                    <li>Entferne das Widget vom Homescreen</li>
+                    <li>Füge es erneut hinzu</li>
+                    <li>Stelle sicher, dass dein iPhone mit dem Internet verbunden ist (für System-Updates)</li>
+                    <li>Prüfe, ob die App auf dem neuesten Stand ist (App Store)</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Sammelt die App meine Daten?</div>
+            <div class="faq-answer">
+                <strong>Nein!</strong> Die Kalenderwochen Widget App:
+                <ul>
+                    <li>Sammelt keine persönlichen Daten</li>
+                    <li>Funktioniert komplett offline</li>
+                    <li>Sendet keine Informationen an Server</li>
+                    <li>Enthält keine Analytics oder Tracking</li>
+                    <li>Zeigt keine Werbung</li>
+                </ul>
+                Mehr Informationen in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Funktioniert die App auf dem iPad?</div>
+            <div class="faq-answer">
+                Die App ist für das <strong>iPhone</strong> optimiert. Grundsätzlich funktionier die App aber auch auf einem iPad.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Kann ich die Farben des Widgets ändern?</div>
+            <div class="faq-answer">
+                Aktuell ist das Widget im blauen Design gestaltet. Wir erwägen für zukünftige Updates:
+                <ul>
+                    <li>Verschiedene Farbthemes</li>
+                    <li>Dark Mode Anpassungen</li>
+                    <li>Personalisierungsoptionen</li>
+                </ul>
+                Sende uns dein Feedback zu gewünschten Features!
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Kostet die App etwas?</div>
+            <div class="faq-answer">
+                Die Kalenderwochen Widget App ist <strong>komplett kostenlos</strong> und enthält:
+                <ul>
+                    <li>Keine In-App-Käufe</li>
+                    <li>Keine Abonnements</li>
+                    <li>Keine versteckten Kosten</li>
+                    <li>Keine Werbung</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>🐛 Problem melden</h2>
+        <p>Wenn du einen Bug oder ein technisches Problem gefunden hast:</p>
+        <ol>
+            <li><strong>Öffne die App</strong></li>
+            <li><strong>Gehe zu Einstellungen</strong> (⚙️ Symbol)</li>
+            <li><strong>Tippe auf "Feedback senden"</strong></li>
+            <li><strong>Beschreibe das Problem</strong> möglichst genau</li>
+            <li>Die E-Mail enthält automatisch deine App-Version und Geräte-Info für schnellere Hilfe</li>
+        </ol>
+
+        <p>Oder sende direkt eine E-Mail an: <a href="mailto:support@alohavista.de">support@alohavista.de</a></p>
+
+        <h2>💡 Feature-Wünsche</h2>
+        <p>Hast du eine Idee für ein neues Feature? Wir freuen uns über deine Vorschläge!</p>
+        <p>Sende deine Ideen an: <a href="mailto:feedback@alohavista.de">feedback@alohavista.de</a></p>
+
+        <h2>⭐ Bewertung im App Store</h2>
+        <p>Wenn dir die App gefällt, würden wir uns über eine Bewertung im App Store freuen! Dein Feedback hilft uns, die App weiter zu verbessern.</p>
+
+        <div class="app-info">
+            <h3 style="color: #3359D9; margin-top: 0;">App-Informationen</h3>
+            <p><strong>Name:</strong> Kalenderwochen Widget</p>
+            <p><strong>Entwickler:</strong> Aloha Vista Ralf Höhne</p>
+            <span class="version-badge">Version 1.1</span>
+            <span class="version-badge">iOS 17.0+</span>
+            <span class="version-badge">Kostenlos</span>
+            <p style="margin-top: 20px;">
+                <a href="datenschutz.html">Datenschutzerklärung</a> | 
+                <a href="mailto:support@alohavista.de">Kontakt</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
