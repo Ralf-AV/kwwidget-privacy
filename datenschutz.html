@@ -48,6 +48,13 @@
             font-size: 1.4em;
         }
 
+        h3 {
+            color: #3359D9;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
         p {
             margin-bottom: 15px;
         }
@@ -82,7 +89,7 @@
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; 
         }
 
         .date {
@@ -95,15 +102,15 @@
 <body>
     <div class="container">
         <h1>Datenschutzerklärung</h1>
-        <div class="subtitle">für die Kalenderwochen Widget App</div>
+        <div class="subtitle">für die mobile Applikation Kalenderwochen Widget</div>
         <div class="date">Stand: Februar 2026</div>
 
         <div class="highlight">
             <strong>Zusammenfassung:</strong> Die Kalenderwochen Widget App sammelt keine persönlichen Daten. Alle Berechnungen erfolgen lokal auf Ihrem Gerät. Es werden keine Daten an Server übertragen.
         </div>
 
-        <h2>1. Verantwortlicher</h2>
-        <p>Verantwortlich für die Datenverarbeitung ist:</p>
+        <h2>1. Name und Kontaktdaten des Verantwortlichen</h2>
+        <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO), sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist:</p>
         <div class="contact">
             <strong>Aloha Vista Ralf Höhne</strong><br>
             Feldweg 18<br>
@@ -113,86 +120,138 @@
         </div>
 
         <h2>2. Allgemeine Hinweise</h2>
-        <p>Der Schutz Ihrer persönlichen Daten ist uns wichtig. Diese Datenschutzerklärung informiert Sie darüber, welche Daten bei der Nutzung der Kalenderwochen Widget App verarbeitet werden.</p>
+        <p>Der Schutz Ihrer persönlichen Daten ist uns wichtig. Diese Datenschutzerklärung informiert Sie gemäß Art. 13 und 14 DSGVO darüber, welche Daten bei der Nutzung der Kalenderwochen Widget App (nachfolgend "App") verarbeitet werden, auf welcher Rechtsgrundlage dies geschieht und welche Rechte Sie haben.</p>
 
-        <h2>3. Datenverarbeitung durch die App</h2>
+        <h2>3. Umfang der Datenverarbeitung</h2>
         
-        <h3>3.1 Keine Datenerhebung</h3>
-        <p>Die Kalenderwochen Widget App erhebt, speichert oder überträgt <strong>keine personenbezogenen Daten</strong>. Die App funktioniert vollständig offline und lokal auf Ihrem Gerät.</p>
+        <h3>3.1 Grundsatz: Keine Erhebung personenbezogener Daten</h3>
+        <p>Die Kalenderwochen Widget App ist bewusst datenschutzfreundlich gestaltet. Die App erhebt, speichert oder überträgt <strong>keine personenbezogenen Daten</strong>. Die App funktioniert vollständig offline und lokal auf Ihrem Gerät.</p>
 
         <h3>3.2 Funktionsweise der App</h3>
         <p>Die App verwendet ausschließlich:</p>
         <ul>
-            <li><strong>Systemdatum:</strong> Die App greift auf das aktuelle Datum Ihres Geräts zu, um die Kalenderwoche zu berechnen. Diese Berechnung erfolgt vollständig lokal auf Ihrem Gerät.</li>
-            <li><strong>Widget-Darstellung:</strong> Die berechnete Kalenderwoche wird im Widget auf Ihrem Homescreen angezeigt.</li>
+            <li><strong>Systemdatum und -zeit:</strong> Die App greift auf das aktuelle Datum und die Uhrzeit Ihres Geräts zu, um die Kalenderwoche nach ISO 8601 Standard zu berechnen. Diese Berechnung erfolgt vollständig lokal auf Ihrem Gerät, ohne dass Daten übertragen werden.</li>
+            <li><strong>Widget-Darstellung:</strong> Die berechnete Kalenderwoche wird im Widget auf Ihrem Homescreen angezeigt. Diese Darstellung erfolgt rein lokal über die iOS WidgetKit-Funktionalität.</li>
         </ul>
-        <p>Es werden keine Daten über die Nutzung der App gesammelt, gespeichert oder an Dritte weitergegeben.</p>
+        <p>Es werden keine Daten über die Nutzung der App gesammelt, in Dateien gespeichert oder an Dritte weitergegeben.</p>
 
-        <h3>3.3 Keine Analytics oder Tracking</h3>
-        <p>Die App enthält keine Analytics-Tools, Tracking-Mechanismen oder sonstige Dienste zur Erfassung von Nutzerdaten.</p>
-
-        <h3>3.4 Keine Werbung</h3>
-        <p>Die App zeigt keine Werbung an und verwendet keine Werbe-SDKs.</p>
+        <h3>3.3 Keine Analytics, Tracking oder Werbung</h3>
+        <ul>
+            <li>Die App enthält <strong>keine Analytics-Tools</strong> (z.B. Google Analytics, Firebase Analytics)</li>
+            <li>Die App verwendet <strong>keine Tracking-Mechanismen</strong> zur Verfolgung des Nutzerverhaltens</li>
+            <li>Die App zeigt <strong>keine Werbung</strong> an und verwendet keine Werbe-SDKs</li>
+            <li>Die App enthält <strong>keine Crash-Reporting-Tools</strong></li>
+            <li>Die App sammelt <strong>keine technischen Geräteinformationen</strong> (Device-ID, IDFA, etc.)</li>
+        </ul>
 
         <h2>4. Berechtigungen</h2>
-        <p>Die App benötigt keine besonderen Berechtigungen. Der Zugriff auf das Systemdatum erfolgt automatisch durch das Betriebssystem iOS ohne zusätzliche Berechtigung.</p>
+        <p>Die App benötigt <strong>keine besonderen Berechtigungen</strong> von Ihrem iOS-Gerät:</p>
+        <ul>
+            <li><strong>Kein Standortzugriff</strong></li>
+            <li><strong>Kein Kamerazugriff</strong></li>
+            <li><strong>Kein Mikrofon</strong></li>
+            <li><strong>Kein Zugriff auf Fotos</strong></li>
+            <li><strong>Kein Zugriff auf Kontakte</strong></li>
+            <li><strong>Kein Zugriff auf Kalender</strong></li>
+        </ul>
+        <p>Der Zugriff auf das Systemdatum erfolgt automatisch durch das Betriebssystem iOS ohne zusätzliche Berechtigung und ist für die Grundfunktionalität der App erforderlich.</p>
 
         <h2>5. Datenspeicherung</h2>
-        <p>Die App speichert keine Daten dauerhaft. Alle Berechnungen erfolgen zur Laufzeit und werden nach dem Schließen der App nicht gespeichert.</p>
+        <p>Die App speichert <strong>keine Daten dauerhaft</strong> auf Ihrem Gerät:</p>
+        <ul>
+            <li>Alle Berechnungen erfolgen zur Laufzeit</li>
+            <li>Es werden keine lokalen Datenbanken angelegt</li>
+            <li>Es werden keine Dateien im App-Verzeichnis gespeichert</li>
+            <li>Es werden keine Einstellungen oder Präferenzen gespeichert</li>
+        </ul>
 
         <h2>6. Kontaktaufnahme / Feedback-Funktion</h2>
-        <p>Die App bietet die Möglichkeit, per E-Mail Kontakt aufzunehmen. Wenn Sie die Feedback-Funktion nutzen:</p>
+        <p>Die App bietet die Möglichkeit, per E-Mail Kontakt aufzunehmen. Wenn Sie die Feedback-Funktion in den Einstellungen der App nutzen:</p>
         <ul>
-            <li>Öffnet sich Ihre Standard-E-Mail-App</li>
-            <li>Sie können freiwillig eine E-Mail senden</li>
-            <li>Die E-Mail enthält automatisch technische Informationen (App-Version, Gerätemodell, iOS-Version) zur besseren Fehleranalyse</li>
-            <li>Diese Informationen werden nur verarbeitet, wenn Sie die E-Mail tatsächlich absenden</li>
+            <li>Öffnet sich automatisch Ihre vorinstallierte Standard-E-Mail-App</li>
+            <li>Sie können <strong>freiwillig</strong> eine E-Mail an uns senden</li>
+            <li>Die E-Mail enthält automatisch folgende technische Informationen zur besseren Fehleranalyse:
+                <ul>
+                    <li>App-Version (z.B. "1.0")</li>
+                    <li>Gerätemodell (z.B. "iPhone 14")</li>
+                    <li>iOS-Version (z.B. "iOS 17.0")</li>
+                </ul>
+            </li>
+            <li>Diese Informationen werden <strong>nur</strong> verarbeitet, wenn Sie die E-Mail tatsächlich absenden</li>
         </ul>
-        <p>Ihre E-Mail-Adresse und der Inhalt Ihrer Nachricht werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet und nicht für andere Zwecke genutzt oder an Dritte weitergegeben.</p>
 
-        <h2>7. Rechtsgrundlage</h2>
-        <p>Da keine personenbezogenen Daten erhoben werden, ist keine spezifische Rechtsgrundlage nach DSGVO erforderlich. Die Verarbeitung des Systemdatums erfolgt zur Erfüllung der Vertragspflichten (Art. 6 Abs. 1 lit. b DSGVO) - nämlich der Bereitstellung der App-Funktionalität.</p>
+        <h3>6.1 Rechtsgrundlage für Kontaktaufnahme</h3>
+        <p>Die Verarbeitung Ihrer E-Mail-Adresse und des Nachrichteninhalts erfolgt auf Grundlage Ihrer <strong>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</strong>, die Sie durch das freiwillige Absenden der E-Mail erteilen.</p>
 
-        <h2>8. Datenweitergabe an Dritte</h2>
-        <p>Es erfolgt keine Weitergabe von Daten an Dritte, da keine Daten erhoben werden.</p>
+        <h3>6.2 Zweck und Speicherdauer</h3>
+        <p>Ihre E-Mail-Adresse und der Inhalt Ihrer Nachricht werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet und nicht für andere Zwecke genutzt oder an Dritte weitergegeben. Die Daten werden gelöscht, sobald sie für die Zweckerreichung nicht mehr erforderlich sind, spätestens jedoch nach 12 Monaten.</p>
 
-        <h2>9. Speicherdauer</h2>
-        <p>Da keine Daten gespeichert werden, gibt es keine Speicherdauer.</p>
+        <h3>6.3 Widerruf der Einwilligung</h3>
+        <p>Sie können Ihre Einwilligung zur Speicherung und Verarbeitung Ihrer E-Mail-Daten jederzeit widerrufen. Senden Sie hierzu einfach eine E-Mail an <a href="mailto:kwwidget@alohavista.de">kwwidget@alohavista.de</a> mit dem Betreff "Widerruf Einwilligung".</p>
 
-        <h2>10. Ihre Rechte</h2>
-        <p>Nach der DSGVO haben Sie grundsätzlich folgende Rechte:</p>
+        <h2>7. Rechtsgrundlage der Datenverarbeitung</h2>
+        <p>Soweit die App überhaupt personenbezogene Daten verarbeitet (was faktisch nicht der Fall ist), erfolgt dies auf folgender Rechtsgrundlage:</p>
         <ul>
-            <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
-            <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
-            <li>Recht auf Löschung (Art. 17 DSGVO)</li>
-            <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
-            <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
-            <li>Widerspruchsrecht (Art. 21 DSGVO)</li>
-            <li>Recht auf Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</li>
+            <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (Erfüllung eines Vertrags): Die Verarbeitung des Systemdatums ist erforderlich zur Bereitstellung der vertraglich vereinbarten App-Funktionalität (Anzeige der Kalenderwoche)</li>
+            <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> (Einwilligung): Für die freiwillige Kontaktaufnahme per E-Mail</li>
         </ul>
-        <p>Da die App jedoch keine personenbezogenen Daten erhebt oder speichert, sind diese Rechte in diesem Fall nicht anwendbar.</p>
 
-        <h2>11. Datensicherheit</h2>
-        <p>Da keine Daten über das Internet übertragen oder auf externen Servern gespeichert werden, bestehen keine Risiken durch Datenübertragung oder Speicherung. Die App nutzt ausschließlich die Sicherheitsmechanismen des iOS-Betriebssystems.</p>
+        <h2>8. Empfänger / Weitergabe von Daten</h2>
+        <p>Es erfolgt <strong>keine Weitergabe</strong> von Daten an Dritte, da keine Daten erhoben werden.</p>
+        <p><strong>Hinweis zu Apple/App Store:</strong> Beim Download der App über den Apple App Store erhält Apple im Rahmen des Download-Vorgangs technische Daten (z.B. Apple-ID, Geräteinformationen). Diese Datenverarbeitung erfolgt ausschließlich durch Apple und unterliegt der <a href="https://www.apple.com/legal/privacy/" target="_blank">Datenschutzerklärung von Apple</a>. Wir haben hierauf keinen Einfluss.</p>
 
-        <h2>12. Kinder</h2>
-        <p>Die App richtet sich an alle Altersgruppen. Da keine Daten erhoben werden, bestehen keine besonderen Anforderungen bezüglich der Nutzung durch Kinder.</p>
+        <h2>9. Datenübermittlung in Drittländer</h2>
+        <p>Es erfolgt <strong>keine Übermittlung</strong> personenbezogener Daten in Drittländer außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraums.</p>
 
-        <h2>13. Änderungen dieser Datenschutzerklärung</h2>
-        <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an geänderte Rechtslage oder Änderungen der App anzupassen. Die jeweils aktuelle Version ist in der App verfügbar.</p>
+        <h2>10. Speicherdauer</h2>
+        <p>Da die App keine Daten speichert, gibt es keine Speicherdauer. Ausnahme: Bei Kontaktaufnahme per E-Mail werden die Daten gemäß Ziffer 6.2 gespeichert.</p>
 
-        <h2>14. Kontakt</h2>
-        <p>Bei Fragen zum Datenschutz können Sie uns unter folgender Adresse kontaktieren:</p>
+        <h2>11. Ihre Rechte als betroffene Person</h2>
+        <p>Nach der Datenschutz-Grundverordnung stehen Ihnen gegenüber dem Verantwortlichen folgende Rechte zu:</p>
+        <ul>
+            <li><strong>Recht auf Auskunft</strong> (Art. 15 DSGVO): Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob personenbezogene Daten verarbeitet werden</li>
+            <li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO): Sie haben das Recht, unverzüglich die Berichtigung unrichtiger Daten zu verlangen</li>
+            <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO): Sie haben das Recht, die Löschung Ihrer Daten zu verlangen</li>
+            <li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+            <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+            <li><strong>Widerspruchsrecht</strong> (Art. 21 DSGVO)</li>
+            <li><strong>Recht auf Widerruf einer Einwilligung</strong> (Art. 7 Abs. 3 DSGVO)</li>
+            <li><strong>Recht auf Beschwerde bei einer Aufsichtsbehörde</strong> (Art. 77 DSGVO)</li>
+        </ul>
+        <p><strong>Hinweis:</strong> Da die App keine personenbezogenen Daten erhebt oder speichert, sind diese Rechte in diesem Fall faktisch nicht anwendbar. Bei Kontaktaufnahme per E-Mail gelten die Rechte selbstverständlich.</p>
+
+        <h3>11.1 Beschwerderecht bei Aufsichtsbehörde</h3>
+        <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.</p>
+
+        <h2>12. Datensicherheit</h2>
+        <p>Da die App ausschließlich offline funktioniert und keine Daten über das Internet überträgt oder auf externen Servern speichert, bestehen keine Risiken durch Datenübertragung oder externe Speicherung.</p>
+        <p>Die App nutzt ausschließlich die Sicherheitsmechanismen des iOS-Betriebssystems. Apple implementiert umfangreiche Sicherheitsmaßnahmen zum Schutz der Apps und Daten auf iOS-Geräten.</p>
+
+        <h2>13. Automatisierte Entscheidungsfindung / Profiling</h2>
+        <p>Die App verwendet <strong>keine automatisierte Entscheidungsfindung</strong> einschließlich Profiling gemäß Art. 22 Abs. 1 und 4 DSGVO.</p>
+
+        <h2>14. Nutzung durch Kinder</h2>
+        <p>Die App richtet sich an alle Altersgruppen und ist auch für Kinder geeignet. Da die App keine Daten erhebt, bestehen keine besonderen datenschutzrechtlichen Anforderungen bezüglich der Nutzung durch Kinder.</p>
+
+        <h2>15. Änderungen dieser Datenschutzerklärung</h2>
+        <p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an geänderte Rechtslagen oder Änderungen der App sowie deren Funktionsweise anzupassen.</p>
+        <p>Die jeweils aktuelle Version ist über die Support-URL in der App-Beschreibung im App Store sowie in den Einstellungen der App verfügbar. Wir empfehlen Ihnen, diese Datenschutzerklärung regelmäßig zu überprüfen, um über etwaige Änderungen informiert zu bleiben.</p>
+
+        <h2>16. Kontakt zum Datenschutz</h2>
+        <p>Bei Fragen zum Datenschutz, zur Ausübung Ihrer Rechte oder Beschwerden können Sie uns unter folgender Adresse kontaktieren:</p>
         <div class="contact">
-            E-Mail: <a href="mailto:kwwidget@alohavista.de">kwwidget@alohavista.de</a>
+            E-Mail: <a href="mailto:kwwidget@alohavista.de">kwwidget@alohavista.de</a><br>
+            Betreff: "Datenschutz - Kalenderwochen Widget"
         </div>
 
-        <h2>15. Zuständige Aufsichtsbehörde</h2>
-        <p>Zuständige Aufsichtsbehörde in Datenschutzfragen ist:</p>
+        <h2>17. Zuständige Aufsichtsbehörde</h2>
+        <p>Für datenschutzrechtliche Beschwerden ist folgende Aufsichtsbehörde zuständig:</p>
         <div class="contact">
-            Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit<br>
+            Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)<br>
             Graurheindorfer Str. 153<br>
             53117 Bonn<br>
+            Telefon: +49 (0)228 997799-0<br>
+            E-Mail: poststelle@bfdi.bund.de<br>
             Website: <a href="https://www.bfdi.bund.de" target="_blank">www.bfdi.bund.de</a>
         </div>
 
